@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url("fontes/idroid.otf");
+}
+body{
+    background-color: #84E1AD;
+}
+header{
+    background-image: linear-gradient(to bottom, #37C677, #1C623A);
+}
+.encabezado{
+    text-align: center;
+    color: white;
+}
+section{
+    margin: 0 66px;
+    padding: 10px;
+    background-color: white;
+}
+.menu{
+    list-style: none;
+}
+.menu > li:hover{
+    background-color: #1C623A;
+    font-size: 20px;
+}
+h1.fuente{
+    color: #266542;
+    font-family: "idroid", Arial, sans-serif;
+}
+.fondo{
+    color: #266542;
+    background-image: linear-gradient(to right,#C7EBD7,#EFF9F3);
+    font-family: "idroid", Arial, sans-serif;
+}
+p{
+    text-align: justify;
+}
+.titulo.extra{
+    background-color: #2FA866;
+}
+.extra{
+    background-color: #C5EBD6;
+    border-radius: 5px;
+}
+.extra > p{
+    padding: 10px;
+}

@@ -1,0 +1,87 @@
+/*
+Este bloque de código se aplica a todo el contenido del cuerpo de la página.
+Hace que el contenido se centre tanto horizontal como verticalmente,
+gracias al uso de Flexbox.
+
+* display: flex;
+    Convierte el elemento en un contenedor flexible, permitiendo un
+    diseño más dinámico y adaptable.
+
+* flex-direction: column;
+    Ordena los elementos hijos en una columna, uno debajo del otro.
+
+* align-items: center;
+    Asegura que los elementos hijos estén alineados horizontalmente
+    en el centro del contenedor.
+
+* justify-content: center;
+    Asegura que los elementos hijos estén alineados verticalmente
+    en el centro del contenedor.
+
+* min-height: 100vh;
+    Establece la altura mínima del cuerpo al 100% de la altura de la ventana
+    del navegador, garantizando que el contenido siempre esté centrado,
+    incluso si hay poco contenido.
+*/
+body {
+    background-color: rgb(128, 180, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /*
+  Este bloque de código se aplica a todas las imágenes de la página.
+  
+  * max-width: 300px;
+      Limita el ancho máximo de la imagen a 300 píxeles, evitando que
+      la imagen sea demasiado grande y distorsione el diseño.
+  
+  * margin-bottom: 20px;
+      Añade un espacio de 20 píxeles debajo de cada imagen,
+      separándola del siguiente elemento.
+  */
+  img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  /*
+  Este bloque se aplica a los encabezados (h1, h2) y párrafos (p).
+  Centra el texto de estos elementos horizontalmente.
+  */
+  h1, h2, p {
+    text-align: center;
+  }
+  
+  /*
+  Este bloque se aplica a las listas no ordenadas (ul).
+  Elimina los marcadores de lista por defecto y el espacio interno.
+  */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /*
+  Este bloque se aplica a cada elemento de la lista (li).
+  Convierte cada elemento de la lista en un contenedor flexible,
+  alineando sus elementos hijos verticalmente en el centro.
+  Además, añade un margen inferior para separar los elementos de la lista.
+  */
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /*
+  Este bloque se aplica a las imágenes dentro de los elementos de la lista.
+  Añade un margen derecho a las imágenes, creando un espacio entre
+  la imagen y el texto.
+  */
+  li img {
+    margin-right: 10px;
+  }
